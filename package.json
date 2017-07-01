@@ -1,0 +1,35 @@
+{
+  "name": "apiway-scheduler",
+  "version": "1.0.0",
+  "description": "Scheduler instance for apiway.io",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/mqtt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apiway/apiway-scheduler.git"
+  },
+  "keywords": [
+    "mqtt",
+    "mosquitto",
+    "apiway",
+    "scheduler"
+  ],
+  "author": "bluehackmaster <master@bluehack.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apiway/apiway-scheduler/issues"
+  },
+  "homepage": "https://github.com/apiway/apiway-scheduler#readme",
+  "dependencies": {
+    "bunyan": "^1.8.10",
+    "handlebars": "^4.0.10",
+    "hashmap": "^2.1.0",
+    "mqtt": "^2.8.0",
+    "node-schedule": "^1.2.3",
+    "promise": "^7.1.1",
+    "request": "^2.81.0"
+  }
+}
