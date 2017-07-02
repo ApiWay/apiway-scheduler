@@ -6,12 +6,12 @@
 
 var config = require('../config')
 var bunyan = require('bunyan')
-var mqtt = require('mqtt')
+var mqtt = require('bin/app')
 var scheduler = require('../lib/scheduler')
 
 let log = bunyan.createLogger({name:'mqtt'})
 
-let TOPIC = 'apiway'
+let TOPIC = 'apiway/schedule'
 
 /**
  * Connect to MQTT Broker
@@ -34,6 +34,7 @@ client.on('error', onError);
  */
 
 function onConnect() {
+  scheduler.bootstrap()
   client.subscribe(TOPIC)
 }
 
