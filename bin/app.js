@@ -6,7 +6,7 @@
 
 var config = require('../config')
 var bunyan = require('bunyan')
-var mqtt = require('bin/app')
+var mqtt = require('mqtt')
 var scheduler = require('../lib/scheduler')
 
 let log = bunyan.createLogger({name:'mqtt'})
