@@ -11,7 +11,7 @@ var scheduler = require('../lib/scheduler')
 
 let log = bunyan.createLogger({name:'mqtt'})
 
-let TOPIC = 'apiway/schedule'
+let TOPIC = 'apiway/scheduler/+'
 
 /**
  * Connect to MQTT Broker
