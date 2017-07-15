@@ -55,3 +55,8 @@ function onMessage(topic, message, packet) {
 function onError (error) {
   log.info(error)
 }
+
+process.on('uncaughtException', function (err) {
+  console.log('uncaughtException : ' + err);
+  scheduler.gracefullExit()
+});

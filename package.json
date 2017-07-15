@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/apiway/apiway-scheduler#readme",
   "dependencies": {
-    "apiway.js": "latest",
+    "apiway-sdk-js": "latest",
     "bunyan": "^1.8.10",
     "handlebars": "^4.0.10",
     "hashmap": "^2.1.0",
